@@ -1,16 +1,14 @@
 import LoadingScreen from './components/LoadingScreen';
 import Navbar from './components/Navbars';
-import './components/styles/App.css';
 import HomePage from './components/Home';
+import './components/styles/App.css';
 
-function App() {
+export default function App() {
   return (
     <>
-    <LoadingScreen />
-    <Navbar />
-    <HomePage />
+      <LoadingScreen />
+      <Navbar />
+      <HomePage />
     </>
-  )
+  );
 }
-
-export default App

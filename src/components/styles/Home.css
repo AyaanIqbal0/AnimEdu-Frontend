@@ -1,4 +1,4 @@
-/* Main componets Postioning and Sizing */
+/* Main components Positioning and Sizing */
 .hero {
     width: 80%;
     margin: auto;
@@ -6,6 +6,7 @@
     display: flex;
     color: #fff;
     align-items: center;
+    position: relative; 
 }
 
 .hero-element {
@@ -17,14 +18,12 @@
     justify-content: flex-end;
 }
 
-/* Inside main componet css */
-
+/* Inside main component css */
 .hero-right img {
     height: 300px;
 }
 
 .hero-left h1 {
-
     background: -webkit-linear-gradient(rgb(144, 254, 229), rgb(91, 193, 239), rgb(119, 94, 173));
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -42,25 +41,20 @@
 }
 
 /* Image animation */
-
 .hero-right img {
-
     animation: mover 1s infinite alternate;
 }
-
 
 @keyframes mover {
     0% {
         transform: translateY(0);
     }
-
     100% {
         transform: translateY(-15px);
     }
 }
 
 /* Button Design */
-
 button {
     cursor: pointer;
     border: 0;
@@ -89,3 +83,10 @@ button:hover {
     background-color: rgb(91, 193, 239);
 }
 
+/* User Button Positioning */
+.user-button {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    z-index: 10; 
+}
