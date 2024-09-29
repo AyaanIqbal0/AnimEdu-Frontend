@@ -2,6 +2,7 @@
 
 /* main navbar */
 .navbar {
+  height: 60px !important;
   background-color: #010409;
   height: 5%;
   width: 80%;
@@ -44,7 +45,7 @@
   width: 100%;
   z-index: 1;
   background: var(--background-color);
-  clip-path: circle(10px at calc(100% - 12.5%) 45px);
+  clip-path: circle(1px at calc(100% - 12.5%) 45px);
   transition: all 0.3s ease-in-out;
 }
 
@@ -53,7 +54,7 @@
 }
 
 .menu-btn {
-  position: relative;
+  position: fixed;
   z-index: 2;
   display: block;
   height: 50px;
@@ -66,8 +67,10 @@
   color: #fff;
   cursor: pointer;
   background: #010409;
-  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  
   transition: all 0.3s ease-in-out;
+  right: 10%;
+  top: 23px;
 }
 
 #active:checked~.menu-btn {
@@ -130,22 +133,21 @@ input[type="checkbox"] {
 }
 
 
-.navbar {
+/* .navbar {
   
-  animation-delay: 2.0s;
-  animation-name: navbar-animation;
-  animation-iteration-count: 1;
-  animation-duration: 1s;
-  transition-timing-function: ease-in-out;
+  animation: navbar-animation 1s ease 2.2s backwards;
   
-}
+} */
 
 @keyframes navbar-animation {
   0% {
+    opacity: 0;
     transform: translateY(-100px);
   }
 
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
+

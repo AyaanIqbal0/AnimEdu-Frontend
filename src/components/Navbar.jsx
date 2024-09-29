@@ -10,7 +10,7 @@ function Nav(){
         </div>
         <div>
             <input type="checkbox" id="active" />
-            <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+            <label for="active" className="menu-btn"><i className="fas fa-bars"></i></label>
             <div className="wrapper">
             <ul>
                 <li><a href="#">Home</a></li>

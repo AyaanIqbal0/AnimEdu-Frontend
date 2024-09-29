@@ -1,6 +1,14 @@
 import heroImg from '../assets/hero-img.png'
 import './styles/Home.css';
-function HomePage(){
+
+
+
+function HomePage() {
+    const myTimeout2 = setTimeout(myGreeting2, 3800);
+    function myGreeting2() {
+        console.log("hello")
+        document.getElementById("hero-img").classList.remove("hero-img2")
+    }
     return (
         <>
             <div className="hero">
@@ -10,7 +18,7 @@ function HomePage(){
                     <button className='log'>Log in / Sign up</button>
                 </div>
                 <div className="hero-element hero-right">
-                    <img src={heroImg} alt="" srcset="" />
+                    <img src={heroImg} id='hero-img' className='hero-img hero-img2' />
                 </div>
             </div>
         </>

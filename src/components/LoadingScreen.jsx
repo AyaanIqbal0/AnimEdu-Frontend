@@ -5,6 +5,7 @@ function LoadingScreen(){
     const myTimeout = setTimeout(myGreeting, 2300);
     function myGreeting(){
         document.getElementById("main").classList.add("none");
+        
     }
     return(
         <>
