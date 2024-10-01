@@ -1,13 +1,15 @@
 import './styles/Navbars.css';
 import logo from '../assets/logo.png';
 
+
 function Navbar() {
     return (
         <>
-            <div className="navbar">
+        <div className="navbar-container">
+        <div className="navbar">
                 <div className="left-icons">
                     <div className="logo">
-                        <img src={logo} className='logo-png' alt="Logo" /> 
+                        <img src={logo} className='logo-png' />
                     </div>
                 </div>
                 <div className="right-icons">
@@ -19,7 +21,6 @@ function Navbar() {
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">About</a></li>
                                 <li><a href="#">Services</a></li>
-                                {/* Removed SignedIn and SignedOut logic */}
                                 <li><a href="#">Login</a></li>
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
@@ -27,8 +28,9 @@ function Navbar() {
                     </div>
                 </div>
             </div>
+        </div>
+            
         </>
-    );
+    )
 }
-
 export default Navbar;

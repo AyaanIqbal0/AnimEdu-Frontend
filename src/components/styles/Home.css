@@ -2,7 +2,7 @@
 .hero {
     width: 80%;
     margin: auto;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     color: #fff;
     align-items: center;
@@ -41,8 +41,15 @@
 }
 
 /* Image animation */
+<<<<<<< HEAD
 .hero-right img {
     animation: mover 1s infinite alternate;
+=======
+
+.hero-img {
+
+    animation: mover 1s infinite alternate ;
+>>>>>>> origin/master
 }
 
 @keyframes mover {
@@ -83,6 +90,7 @@ button:hover {
     background-color: rgb(91, 193, 239);
 }
 
+<<<<<<< HEAD
 /* User Button Positioning */
 .user-button {
     position: absolute;
@@ -90,3 +98,38 @@ button:hover {
     right: 20px; 
     z-index: 10; 
 }
+=======
+/* Animation on Load */
+
+
+
+.hero-element > h1 {
+    animation: drop-in 1s ease 2.2s backwards;
+}
+
+.hero-element > h2 {
+    animation: drop-in 1s ease 2.4s backwards;
+}
+
+.hero-element > button{
+    animation: drop-in 1s ease 2.5s backwards;
+}
+
+.hero-img2 {
+    animation: drop-in 1s ease 2.5s backwards;
+}
+
+@keyframes drop-in {
+    from {
+        filter: blur(4px);
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        filter: blur(0);
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+>>>>>>> origin/master

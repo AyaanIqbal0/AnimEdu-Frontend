@@ -1,0 +1,61 @@
+.about {
+    
+    background-image: url(/src/assets/about-background.svg);
+    background-repeat: no-repeat;
+    width: 80%;
+    background-size: 900px;
+    margin: auto;
+    height: 100vh;
+    color: white;
+    text-align: right;
+    
+    
+}
+
+.about  > .about-container{
+   position: relative;
+   width: 38%;
+   left: 60%;
+   top: 270px;
+   
+}
+.about h1{
+    background: -webkit-linear-gradient(rgb(144, 254, 229), rgb(91, 193, 239), rgb(119, 94, 173));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+.about hr{
+    margin-bottom: 15px;
+    width: 60px;
+    position: absolute;
+    right: 0;
+    border-top: 1px solid rgb(144, 254, 229);
+}
+.about  h2 {
+    
+    font-size: 15px;
+    padding-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  
+}
+
+
+.show{
+  animation: drop-in 1s ease .5s backwards;
+
+}
+@keyframes drop-in {
+  from {
+      filter: blur(4px);
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+
+  to {
+      filter: blur(0);
+      opacity: 1;
+      transform: translate(0px);
+  }
+}
