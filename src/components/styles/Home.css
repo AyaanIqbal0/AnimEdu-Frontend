@@ -1,5 +1,6 @@
 /* Main componets Postioning and Sizing */
 .hero {
+    padding-top: 100px;
     width: 80%;
     margin: auto;
     height: 90vh;
@@ -122,3 +123,21 @@ button:hover {
         transform: translate(0px);
     }
 }
+
+@media(max-width: 479px) {
+    .hero {
+        flex-direction: column;
+        padding-top: 140px;
+    }
+    .hero-element{
+        width: 100%;
+    }
+    .hero-right{
+        order: -1;
+    }
+    #hero-img {
+        height: 250px;
+        position: relative;
+        left: 10px;
+    }
+  }

@@ -2,6 +2,9 @@
 
 /* main navbar */
 .navbar {
+  z-index: 2;
+  position: fixed;
+  right: 10%;
   height: 60px !important;
   background-color: #010409;
   height: 5%;

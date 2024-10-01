@@ -25,21 +25,16 @@ export const fadein = (direction, delay) => {
             y: direction === 'up' ? 40 : direction === 'down' ? -40 : 0,
             x: direction === 'right' ? 60 : direction === 'left' ? -60 : 0,
             
-            filter:"blur(3px)",
+            
             opacity:0,
 
         },
         show: {
             y: 0,
             x: 0,
-            opacity: 1,filter: "blur(0px)",
-            transition: {
-                filter: "blur(0px)",
-                type: 'tween',
-                duration: 1,
-                delay: delay,
-                ease: [0.25, 0.25, 0.25, 0.75],
-            }
+            opacity:1,
+            animation: 'drop-in 1s ease .1s backwards',
+            
         }
     }
 }
